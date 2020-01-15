@@ -1,0 +1,10 @@
+
+.HomePage{
+    background-color:black;
+    font-size: calc(10px + 2vmin);
+    color: paleturquoise;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
