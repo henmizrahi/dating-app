@@ -1,0 +1,24 @@
+
+
+.TopBar{
+    min-height: 10vh;
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-color: cadetblue;
+    border-style: groove;
+    color:black;
+    padding: 10px;
+}
+
+.logLink{
+    color:black;
+}
+
+.homeLink{
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+}
