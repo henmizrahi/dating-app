@@ -8,7 +8,7 @@ export function TopBar(){
     return(
         <div className = "TopBar">
             <Link className="homeLink" to="/">DateNigth</Link>
-            <Link  className="logLink" to="loging">Login</Link>
+            <Link  className="logLink" to="/login">Login</Link>
         </div>
     );
 } 

@@ -1,0 +1,46 @@
+
+
+
+.Login{
+    margin: 5pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.Form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Input{
+    margin: 10px;
+   outline: none;
+    border-radius: 3px;
+    transition: width 0.2s linear;
+    width: 70px;
+}
+
+.FormItem{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 200px;
+}
+
+.Button{
+    border-radius: 3px;
+    font-size: 15px;
+    margin: 100px;
+
+
+}
+
+.LogWindows{
+    border-color: black;
+    border-style: solid;
+}

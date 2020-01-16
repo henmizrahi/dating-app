@@ -1,16 +1,20 @@
 import React from 'react';
-import {Route, Switch, Router} from "react-router-dom"
+import {Route, Switch} from "react-router-dom"
 import './App.css';
 import { TopBar } from "./topBar/topBar"
 import {HomePage} from "./homePage/homePage"
+import {LoginPage} from "./loginPage/loginPage"
 
 function App() {
   return (
-    <div>
+    <div className = "App">
       <TopBar></TopBar>
         <Switch>
           <Route path="/" exact>
             <HomePage />
+          </Route>
+          <Route path="/login" exact>
+            <LoginPage />
           </Route>
         </Switch>
     </div>
@@ -18,15 +22,5 @@ function App() {
 }
 
 
-{/* <Router>
-<div>
-<TopBar/>
-  <Switch>
-    <Route path="/" exact>
-      <HomePage />
-    </Route>
-  </Switch>
-</div>
-</Router> */}
 
 export default App;
