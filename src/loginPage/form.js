@@ -13,6 +13,8 @@ export function Form({buttonName, submit}){
         if(isValid){
             submit(userName,password);
         }
+        setUser("");
+        setPassword("");
         
     }
 

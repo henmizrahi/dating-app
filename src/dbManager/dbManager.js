@@ -36,6 +36,17 @@ export async function getLoginUser(userName,password){
     }
 }
 
+export async function updateUserDetails(userName, name, age, gender, lookingFor){
+    const users = await getUsersList();
+    const user = users.find((user) => checkUserName(user.userName, userName));
+    user.name = name;
+    user.age = age;
+    user.gender = gender;
+    user.lookingFor = lookingFor;
+    await setUser({users});
+    return user;   
+}
+
 
 async function getUsersList(){
     const usersList = await getUser();

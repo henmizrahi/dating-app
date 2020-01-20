@@ -10,14 +10,14 @@ import {useHistory} from "react-router-dom"
 
 export function NewUser(){
 
-    const addUser = useAction(userActions.addUser);
+    const updateUser = useAction(userActions.updateUser);
     const history = useHistory();
 
     async function mySubmit(userName, password){
         const user = await addNewUser(userName, password);
         if(user){
-            addUser(user);
-            history.push("/home")
+            updateUser(user);
+            history.push("/profile")
         }
         else{
             alert("user already exist");

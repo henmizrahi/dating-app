@@ -1,20 +1,24 @@
-.Login{
-    margin: 5pc;
+
+
+
+.ProfilePage{
+    font-size: calc(10px + 2vmin);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    margin: 5pc;
 }
 
-
-.Form{
+.FormProfile{
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-color: black;
+    border-style: solid;
 }
 
-.Input{
+.ProfileInput{
     margin: 10px;
    outline: none;
     border-radius: 3px;
@@ -22,22 +26,21 @@
     width: 70px;
 }
 
-.FormItem{
+.Form-Item{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 200px;
+    width: 250px;
 }
 
-.Button{
+.ProfileButton{
     border-radius: 3px;
-    font-size: 15px;
-    margin: 100px;
+    font-size: 20px;
+    margin: 40px;
 
 
 }
 
-.LogWindows{
-    border-color: black;
-    border-style: solid;
-}
+
+
+

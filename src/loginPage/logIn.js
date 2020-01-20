@@ -9,14 +9,14 @@ import {useHistory} from "react-router-dom";
 
 
 export function LogIn(){
-    const userLogin = useAction(userActions.userLogin);
+    const updateUser = useAction(userActions.updateUser);
     const history = useHistory();
 
     async function mySubmit(userName, password){
         const user = await getLoginUser(userName, password);
         if(user){
-            userLogin(user);
-            history.push("/home");
+            updateUser(user);
+            history.push("/profile");
         }
         else{
             alert("user not exist or password incorrect");
