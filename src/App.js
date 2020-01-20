@@ -4,6 +4,7 @@ import './App.css';
 import { TopBar } from "./topBar/topBar"
 import {HomePage} from "./homePage/homePage"
 import {LoginPage} from "./loginPage/loginPage"
+import {ProfilePage} from "./profilePage/profilePage"
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/login" >
             <LoginPage />
+          </Route>
+          <Route path="/profile" >
+            <ProfilePage />
           </Route>
         </Switch>
     </div>

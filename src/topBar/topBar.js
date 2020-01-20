@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 function loginLinkOptions(userName){
     return(
         userName.length > 0
-        ? <Link  className="logLink" to="/">Hello {userName}</Link>
+        ? <Link  className="logLink" to="/profile">Hello {userName}</Link>
         : <Link  className="logLink" to="/login">Login</Link>)
 
 }
