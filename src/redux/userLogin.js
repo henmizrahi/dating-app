@@ -5,6 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 
+
 const createUser = (userName,password, name = "", age = 0, gender = "", lookingFor= "") => ({
     userName, 
     password,
@@ -23,11 +24,11 @@ const { reducer, actions } = createSlice({
     updateLogin(user, { payload: {name, age, gender, lookingFor }}){
         return {...user, name, age, gender,lookingFor}
     },
-    userLogin(user, { payload: {userName, password, name, age, gender, lookingFor}}) {
-        return createUser(userName, password, name, age, gender, lookingFor);
+    userLogin(user, { payload: userObj}) {
+        return userObj;
     },
-    addUser(user, { payload: {userName, password}}) {
-        return createUser(userName,password);
+    addUser(user, { payload: userObj}) {
+        return userObj;
     },
   }
 });

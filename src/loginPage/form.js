@@ -1,6 +1,5 @@
 
 import React, { useState } from "react"
-import {useHistory} from "react-router-dom"
 import "./loginPage.css"
 
  
@@ -8,12 +7,11 @@ export function Form({buttonName, submit}){
     const [userName, setUser]= useState("");
     const [password, setPassword] = useState("");
     const isValid = userName.length && password.length;
-    const history = useHistory();
+    
 
     const userSubmit = (userName, password) =>{
         if(isValid){
-            submit({userName,password});
-            history.push("/home")
+            submit(userName,password);
         }
         
     }
