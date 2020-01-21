@@ -1,5 +1,5 @@
-import {setUser} from "../server/server.js"
-import {getUser} from "../server/server.js"
+import {setUser, getUser, setFakeUser, getFakeUser} from "../server/server.js"
+import {createFakeProfile} from "./fakeProfileWithApe"
 
 
 const checkUserName = (user, userName) =>user === userName;
@@ -63,5 +63,42 @@ async function createNewUsersJason(newUser){
     users.push(newUser);
     await setUser({users});
 }
+
+
+export async function getFakeProfile(){
+    const users = await getFakeUser();
+    if(users){
+        return users;   
+    }
+    await firstFakeProfilesCreate(); 
+    return await getFakeUser();
+      
+}
+
+async function firstFakeProfilesCreate(){
+    const fakeUsers = createFakeProfile();
+    await setFakeUser(fakeUsers);
+}
+ 
+export async function getRecommendedProfiles(lookingFor){
+    const fakeProfiles = await getFakeProfile();
+    console.log(lookingFor)
+    if(lookingFor === "male&female" || lookingFor === ""){
+        return fakeProfiles;
+    }
+    const user = fakeProfiles.filter(profile => profile.gender === lookingFor);
+    console.log(user)
+    return user;
+
+}
+
+export async function getRecentlyJoinProfiles(){
+    const fakeProfiles = await getFakeProfile();
+    return fakeProfiles.slice(0,10);
+
+}
+
+
+
 
 

@@ -57,6 +57,7 @@ export function ProfilePage(){
                     className= "ProfileInput"
                     onChange= {e => setGender(e.target.value)}
                     value={gender}>
+                    <option value = "">choose an option</option>
                     <option value = "male">male</option>
                     <option value = "female">female</option>
                 </select>
@@ -67,9 +68,10 @@ export function ProfilePage(){
                     className= "ProfileInput"
                     onChange= {e => setLookingFor(e.target.value)}
                     value={lookingFor}>
-                    <option value = "man">man</option>
-                    <option value = "woman">woman</option>
-                    <option value = "man&woman">man&woman</option>
+                    <option value = "">choose an option</option>
+                    <option value = "male">male</option>
+                    <option value = "female">female</option>
+                    <option value = "male&female">man&woman</option>
                 </select>
             </div>
             <div className = "Form-Item">

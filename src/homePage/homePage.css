@@ -1,5 +1,5 @@
 
-.HomePage{
+.UnloggedHomePage{
     background-color:black;
     font-size: calc(10px + 2vmin);
     color: paleturquoise;
@@ -7,4 +7,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.loggedHomePage{
+    margin: 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+
+
+.ProfilesList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 300px;
+
+}
+
+
+
+.ProfileElement{
+    width: 200px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.Image{
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+}
+
+.Title{
+    width: 100px;
 }

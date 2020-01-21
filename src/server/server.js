@@ -21,5 +21,23 @@ export async function setUser(newUsers){
 
 
 
+export async function getFakeUser(){
+    return new Promise (function(resolve, reject){
+        resolve(JSON.parse(myStorage.getItem("fakeUsers")))
+    });
+}
+
+
+export async function setFakeUser(newUsers){
+    return new Promise(function(resolve,reject){
+        myStorage.setItem("fakeUsers",JSON.stringify(newUsers));
+        resolve(200);
+    });
+    
+}
+
+
+
+
 
 
