@@ -24,7 +24,7 @@ export function ProfilePage(){
         if(isValid){
             const user = await updateUserDetails(userLogin.userName, name, age, gender,lookingFor);
             updateUser(user);
-            history.push("/home");
+            history.push("/");
 
         }
     }
