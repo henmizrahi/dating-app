@@ -19,10 +19,23 @@
 
 .logLink{
     color:black;
+    font-size: 20px;
 }
 
 .homeLink{
     color:black;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
+    margin: 10px;
+}
+
+.Logo{
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+}
+
+.leftBar{
+    display: flex;
+    align-items: flex-start;
 }

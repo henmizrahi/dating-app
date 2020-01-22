@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./topBar.css"
 //import {userActions} from "../redux/userLogin"
 import { useSelector } from "react-redux";
+import logo from "../love.png"
 
 
 function loginLinkOptions(userName){
@@ -20,7 +21,10 @@ export function TopBar(){
     const userName = userLogin.userName
     return(
         <div className = "TopBar">
+            <div className= "leftBar">
             <Link className="homeLink" to="/">DateNigth</Link>
+            <img className = "Logo" src= {logo} alt="logo"/>
+            </div>
             {loginLinkOptions(userName)}
         </div>
     );

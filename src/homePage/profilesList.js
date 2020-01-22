@@ -19,7 +19,7 @@ export function ProfilesList({title, data}){
                     name = {profile.name}
                     lastName = {profile.lastName}
                     age = {profile.age}
-                    image = {profile.image}
+                    image = {profile.image[0]}
                      />)
                 }
         </div>

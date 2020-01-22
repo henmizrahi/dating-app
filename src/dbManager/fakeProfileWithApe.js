@@ -1,11 +1,19 @@
 
 import Ape, { name, age, date, arrayOf } from 'ape-mock';
  
-const femaleImage = 
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSzD0h5Ts3jnLGCzTauZlz9r2rNaIuGg7Rv9hfifKUN_UuUWc&s"
-const maleImage = 
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmchTqrn0K2ghxqx34Fx3qZBFON3zCsz751oXNqenX78ZcEFtcGQ&s"
+const femaleImage = [
+"https://img.wcdn.co.il/f_auto,w_700/9/1/2/8/912879-46.jpg",
+"https://mfiles.alphacoders.com/497/497044.jpg",
+"https://i.pinimg.com/originals/bf/d7/67/bfd767a004baf83f1d9aab126beb0559.jpg",
+"https://www.tiuli.com/image/7703ca2ed79be2944781bbbea046abcb.jpg?&width=1080"
+]
+const maleImage = [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmchTqrn0K2ghxqx34Fx3qZBFON3zCsz751oXNqenX78ZcEFtcGQ&s",
+"https://cdn.friendlystock.com/wp-content/uploads/2018/10/6-superhero-with-cape-flying-like-superman-vector-clipart.jpg",
+"https://i2.wp.com/manapop.com/wp-content/uploads/2015/04/Superman-the-icon.jpg",
+"https://www.alllies.org/wp-content/uploads/2011/04/A313.jpg"
 
+]
 
 export function createFakeProfile(){
   const ape = Ape({
