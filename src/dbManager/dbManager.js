@@ -82,12 +82,10 @@ async function firstFakeProfilesCreate(){
  
 export async function getRecommendedProfiles(lookingFor){
     const fakeProfiles = await getFakeProfile();
-    console.log(lookingFor)
     if(lookingFor === "male&female" || lookingFor === ""){
         return fakeProfiles;
     }
     const user = fakeProfiles.filter(profile => profile.gender === lookingFor);
-    console.log(user)
     return user;
 
 }
@@ -96,6 +94,11 @@ export async function getRecentlyJoinProfiles(){
     const fakeProfiles = await getFakeProfile();
     return fakeProfiles.slice(0,10);
 
+}
+
+export async function getFakeProfileByName(name){
+    const fakeProfiles = await getFakeProfile();
+    return fakeProfiles.find((profile) => profile.name === name);
 }
 
 

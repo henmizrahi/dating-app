@@ -1,0 +1,97 @@
+
+
+.Page{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    min-height: 100pc;
+    color: paleturquoise;
+}
+
+.UserProfile{
+    margin: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-color: paleturquoise;
+    border-style: solid;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+
+}
+
+.UserImage{
+    width: 120px;
+    height: 120px; 
+    margin: 7px;
+}
+
+.LikeButton{
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border-color: paleturquoise;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.checkBox{
+    margin-left: -170px;
+
+}
+
+.Creap{
+   display: inline;
+   margin: 10px;
+   color: paleturquoise;
+
+}
+
+.UserName{
+    display: flex;
+    align-items: flex-start;
+    margin: 5px; 
+}
+
+.roundImage{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+}
+.arrow-right {
+    margin: 10px;
+    width: 0; 
+    height: 0; 
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;  
+    border-left: 35px solid paleturquoise;
+}
+  
+.arrow-left {
+    margin: 10px;
+    width: 0; 
+    height: 0; 
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent; 
+    border-right:35px solid paleturquoise; 
+}
+
+.likeLogo{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    margin-top: -7px;
+}
+
+.Like{
+    display: flex;
+    align-items: flex-start;
+    margin-top: initial;
+}
