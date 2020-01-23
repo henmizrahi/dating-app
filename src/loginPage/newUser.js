@@ -1,10 +1,10 @@
 import React from "react"
-import {Form} from "./form"
 import "./loginPage.css"
 import { useAction } from "../redux/utils";
 import { userActions } from "../redux/userLogin";
 import { addNewUser } from "../dbManager/dbManager";
 import {useHistory} from "react-router-dom"
+import {NewUserForm} from "./newUserForm"
 
 
 
@@ -28,7 +28,7 @@ export function NewUser(){
     return(
         <div className ="LogWindows">
             <h2>NewUser</h2>
-            <Form buttonName="Register"  submit = {mySubmit}/>
+            <NewUserForm submit = {mySubmit}/>
         </div>
     )
 }

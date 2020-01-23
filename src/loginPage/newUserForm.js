@@ -3,10 +3,11 @@ import React, { useState } from "react"
 import "./loginPage.css"
 
  
-export function Form({buttonName, submit}){
+export function NewUserForm({submit}){
     const [userName, setUser]= useState("");
     const [password, setPassword] = useState("");
-    const isValid = userName.length && password.length;
+    const [password2,setPassword2] = useState("");
+    const isValid = userName.length && password.length&& password2.length&& password === password2;
     
 
     const userSubmit = (userName, password) =>{
@@ -19,7 +20,7 @@ export function Form({buttonName, submit}){
     }
 
     return(
-            <form className = "Form" 
+            <form className = "NewUserForm" 
                 onSubmit = {e =>{
                     e.preventDefault();
                     userSubmit(userName, password);
@@ -40,8 +41,16 @@ export function Form({buttonName, submit}){
                     onChange= {e => setPassword(e.target.value)}
                     value={password}/>
                 </div>
+                <div className="FormItem">
+                    Password: <input 
+                    type = "password"
+                    className= "Input" 
+                    required
+                    onChange= {e => setPassword2(e.target.value)}
+                    value={password2}/>
+                </div>
                 <div >
-                    <button className="Button" disabled = {!isValid}>{buttonName}</button>
+                    <button className="ButtonNewUser" disabled = {!isValid}>Register</button>
                 </div>
             </form>
     )

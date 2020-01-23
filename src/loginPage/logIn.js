@@ -1,10 +1,10 @@
 import React from "react"
-import {Form} from "./form"
 import "./loginPage.css"
 import { useAction } from "../redux/utils";
 import { userActions } from "../redux/userLogin";
 import {getLoginUser} from "../dbManager/dbManager";
 import {useHistory} from "react-router-dom";
+import {LoginForm} from "./loginForm"
 
 
 
@@ -26,7 +26,7 @@ export function LogIn(){
     return(
         <div className ="LogWindows">
         <h2>LogIn</h2>
-        <Form buttonName= "login" submit = {mySubmit} />
+        <LoginForm  submit = {mySubmit} />
         </div>
     )
 }
