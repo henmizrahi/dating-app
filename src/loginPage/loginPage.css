@@ -7,11 +7,22 @@
 }
 
 
-.Form{
+.LoginForm{
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 250px;
+    height: 300px;
+}
+
+.NewUserForm{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 300px;
 }
 
 .Input{
@@ -19,22 +30,33 @@
    outline: none;
     border-radius: 3px;
     transition: width 0.2s linear;
-    width: 70px;
+    width: 80px;
 }
 
 .FormItem{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
     width: 200px;
 }
 
-.Button{
+.ButtonNewUser{
     border-radius: 3px;
     font-size: 15px;
-    margin: 100px;
+    margin: 130px;
+    margin-left: 90px;
 
 
+
+
+}
+
+.ButtonLogin{
+    border-radius: 3px;
+    font-size: 15px;
+    margin: 165px;
+    margin-left: 100px;
 }
 
 .LogWindows{
